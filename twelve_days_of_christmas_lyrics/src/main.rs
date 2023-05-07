@@ -18,7 +18,7 @@ fn main() {
         "Twelve drummers drumming",
     ];
 
-    for (i, day) in DAYS.iter().enumerate() {
+    for (i, &day) in DAYS.iter().enumerate() {
         println!("On the {day} day of Christmas, my true love sent to me");
         for j in (0..=i).rev() {
             println!("{}", PASSAGES[j])
